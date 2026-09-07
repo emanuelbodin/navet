@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import site from "../site.config";
+---
+<BaseLayout title="about" description={`About ${site.title}`}>
+  <h1>about // {site.title}</h1>
+  <p class="tagline prompt">{site.tagline}</p>
+  <p>
+    navet is a terminal-toned blog. amber on near-black. monospace on purpose.
+    the beat is simple: look at the systems we live inside — social and silicon —
+    and name the defaults we inherit before they finish naming us.
+  </p>
+  <p>
+    no growth hacks. no engagement traps. just static files, an rss feed, and a
+    little CRT grit.
+  </p>
+  <p class="prompt">author: {site.author}</p>
+</BaseLayout>

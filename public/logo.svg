@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120" role="img" aria-label="navet">
+  <title>navet</title>
+  <g fill="none" stroke="#ffb000">
+    <path stroke-width="5.5" stroke-linecap="square" stroke-linejoin="miter"
+          d="M18 18 V102 M18 18 L72 102 M72 18 V102"/>
+    <path stroke-width="5.5" stroke-linecap="square" stroke-linejoin="miter"
+          d="M98 102 L130 18 L162 102 M112 70 H148"/>
+    <!-- Classic whale fluke silhouette, tip down (valfena) -->
+    <path fill="#ffb000" stroke="none"
+          d="M260 108
+             C248 92 228 70 210 50
+             C196 34 178 18 198 14
+             C214 11 224 26 232 40
+             C238 50 246 56 260 50
+             C274 56 282 50 288 40
+             C296 26 306 11 322 14
+             C342 18 324 34 310 50
+             C292 70 272 92 260 108 Z"/>
+    <path stroke-width="5.5" stroke-linecap="square" stroke-linejoin="miter"
+          d="M375 18 H442 M375 18 V102 H442 M375 60 H424"/>
+    <path stroke-width="5.5" stroke-linecap="square" stroke-linejoin="miter"
+          d="M468 18 H542 M505 18 V102"/>
+  </g>
+</svg>

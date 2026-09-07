@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import site from "../site.config";
+
+const posts = (await getCollection("posts"))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+function fmt(d: Date) {
+  return d.toISOString().slice(0, 10);
+}
+---
+<BaseLayout>
+  <p class="tagline prompt">{site.tagline}</p>
+  <p>
+    welcome to <strong>{site.title}</strong> — a small static outpost for notes on
+    how social systems and technical ones share the same quiet gravity: defaults.
+  </p>
+  <h2>// posts</h2>
+  <ul class="posts">
+    {posts.map((post) => (
+      <li>
+        <a class="title" href={`/posts/${post.id}`}>{post.data.title}</a>
+        <div class="meta">{fmt(post.data.pubDate)}</div>
+        <p class="desc">{post.data.description}</p>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>
